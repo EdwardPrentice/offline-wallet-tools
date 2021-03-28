@@ -53,15 +53,17 @@ The approach I use to secure my seed phrase is to maintain at least 1 paper copy
 * The paper copy is destroyed through fire, flooding, etc
 * I unknowingly corrupt my digital copy
 * I forget my password to decrypt my digital copy
+* Paper copy is destroyed and digital copies are all corrupted as they weren't created correctly (because we check and double check, including checking md5 hashes inside and outside the VM)
 * Any software package inside the Virtual Machine starts being naughty and attempts to send information "home" over the internet
 
-#### Scenarios this does not accommodate
+#### Scenarios this does not accommodate for
 
 * The host laptop is compromised. In that case, it's game over. Only do this on a machine you trust. If you have the budget, buy a whole separate 'clean' piece of hardware and keep it offline as much as possible with a minimal amount of software on it.
 * [Wrenches](https://xkcd.com/538/)
-* A catastrophe that involves the paper copy(ies) being destroyed and an inability to access the digital copy.
+* Paper copy gets destroyed and I don't know the password for the digital copies
+* A catastropic scenario whereby the paper copy and the digital copies all become inaccessible. I'm not exactly sure what this would look like, assuming the digital copies are encrypted correctly and I know the password. The paper copy would have to be destroyed at the same time as being permanently locked out of all of my cloud storage accounts and any compromising any friends I have sent a digital copy to. Hard to imagine.
 
-I like to know that I have at least one level of redundancy and duplicating the paper copy to other locations is simple enough. If the paper copy is destroyed and I'm unable to decrypt the digital copy then my funds are lost.
+I like to know that I have at least one level of redundancy. I think exploring safety deposit type offerings is also a good idea for an exta physical copy. If all paper copies are destroyed and I'm unable to decrypt the digital copies then my funds are lost.
 
 Therefore, after setting up a new hardware wallet I want to **very meticulously** encrypt the seed phrase so that I can safely store it in my cloud storage.
 
