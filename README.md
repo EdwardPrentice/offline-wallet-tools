@@ -17,9 +17,9 @@ This virtual machine is good for generating a new 12 word seed phrase offline an
   
   vagrant ssh
   python3 -c "from mnemonic import Mnemonic; mnemo = Mnemonic('english'); words = mnemo.generate(strength=128); print(words);" > new-wallet.txt
-  ./encrypt.sh new-wallet.txt
+  /vagrant/encrypt.sh new-wallet.txt
   # always test you can decrypt it again
-  ./decrypt.sh new-wallet.txt.gpg > decrypted.txt
+  /vagrant/decrypt.sh new-wallet.txt.gpg > decrypted.txt
   # This is when to make a paper copy. So very very carefully transcribe the words to a piece of paper.
   rm decrypted.txt
   md5sum new-wallet.txt.gpg # shows us the md5 hash of the file
