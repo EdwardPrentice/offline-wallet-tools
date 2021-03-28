@@ -1,4 +1,6 @@
-# Welcome
+# A tool for generating and encrypting 12 word seed phrases offline
+
+Requires [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/). This will act as a 'clean room' which will be the only place we handle our key material.
 
 This Vagrant box is built to be used offline to perform a couple of very simple functions. Things this machine can do:
 
