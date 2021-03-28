@@ -1,4 +1,3 @@
-
 Vagrant.configure("2") do |config|
   config.vm.box = "ubuntu/focal64" # officially published image
 
@@ -12,5 +11,6 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell", inline: "pip3 -q install mnemonic"
   config.vm.provision "shell", inline: "curl -sfO https://gist.githubusercontent.com/EdwardPrentice/cc49c094bd324aa4156f14a25b0621cb/raw/encrypt.sh && chmod +x encrypt.sh"
   config.vm.provision "shell", inline: "curl -sfO https://gist.githubusercontent.com/EdwardPrentice/38e0f1d9875ca80805504c4c719d90c8/raw/decrypt.sh && chmod +x decrypt.sh"
+  config.vm.provision "shell", inline: "echo 'To generate a new 12 word seed phrase run \"python3 -c \"from mnemonic import Mnemonic; mnemo = Mnemonic(\\\"english\\\"); print(mnemo.generate(strength=128));\"\"'"
   config.vm.provision "shell", inline: "python3 -c \"from mnemonic import Mnemonic; mnemo = Mnemonic('english'); print(mnemo.generate(strength=128));\""
 end
