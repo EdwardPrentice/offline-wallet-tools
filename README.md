@@ -1,4 +1,8 @@
-# A tool for generating and encrypting 12 word seed phrases offline
+# Goals
+Make non-hardware wallets safer. Where you can, use a hardware wallet. However, when a hardware wallet isn't what you want, you still need to be as secure as you can be. This tool helps to teach and provide a way for people to be as safe as possible when not using hardware wallets and provides a way to backup hardware wallet seed phrases. Even with a hardware wallet it's important that the seed phrase is kept safe.
+
+
+## A tool for generating and encrypting 12 word seed phrases offline
 
 Requires [Virtual Box](https://www.virtualbox.org/) and [Vagrant](https://www.vagrantup.com/). This will act as a 'clean room' which will be the only place we handle our key material.
 
@@ -8,8 +12,9 @@ This Vagrant box is built to be used offline to perform a couple of very simple 
 * Encrypt a file with AES256 symmetric encryption
 * Decrypt a file that is AES256 encrypted
 
-## Usage
+### Usage
 This virtual machine is good for generating a new 12 word seed phrase offline and encrypting it before storing it on the host. It's really very simple, but let's see exactly the commands to use:
+
 ```
   vagrant up
   
